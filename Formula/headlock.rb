@@ -7,27 +7,28 @@ class Headlock < Formula
   on_macos do
     on_arm do
       url "https://headlock.app/downloads/v0.1.0/headlock-darwin-arm64.tar.gz"
-      sha256 "92987cb3df83e63f1fd0f519a8a1924184be575c8ebb641a613d9c093450c97a"
+      sha256 "36f037497f75da940b8b9e2f872d098d05b3709510b4f96ffb7db0b7c37d880a"
     end
     on_intel do
       url "https://headlock.app/downloads/v0.1.0/headlock-darwin-amd64.tar.gz"
-      sha256 "5601c5be302fd47cab0b3932d6640647561b75ce36e0474e5d6d7e7883d2e0d2"
+      sha256 "f6df2af4c3adc6039c6d95fa0af1228c1893169f918fbbf464d8a9e2b0b67d09"
     end
   end
 
   on_linux do
     on_arm do
       url "https://headlock.app/downloads/v0.1.0/headlock-linux-arm64.tar.gz"
-      sha256 "b1d3073c36d0fbcd243a83017c48e29b2d87061ec210f94e330ecdb55be271ae"
+      sha256 "9742c617b8011747dd10aa770098733fcb98b61f0006e3ee4668f4cf53359dbc"
     end
     on_intel do
       url "https://headlock.app/downloads/v0.1.0/headlock-linux-amd64.tar.gz"
-      sha256 "f4189a68ff49e20239745becabff4482e613a183f7d6c7c5ac62eb1d1a974311"
+      sha256 "708fc0638207be9ed36ae5e61c4d8adc65d5ec68b7022295f49577b739f91459"
     end
   end
 
   def install
     bin.install "headlock"
+    bin.install "headlock-watch"
   end
 
   test do
